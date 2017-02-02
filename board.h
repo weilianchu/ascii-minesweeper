@@ -158,6 +158,9 @@ public:
 		Tile* tile = this->Tiles[y][x];
 		if (tile->is_mine()) {
 			return -1;
+		} else if (tile->is_flagged()) {
+			cout << "Unflag the tile to click" << endl;
+			return 1;
 		} else {
 			int x_start = -1;
 			int x_end = 1;

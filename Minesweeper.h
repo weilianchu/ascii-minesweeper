@@ -58,6 +58,7 @@ public:
 
 		if (x > this->board->get_width() || y > this->board->get_height() || x <= 0 || y <= 0) {
 			cout << "This isn't a valid coordinate." << endl;
+			return;
 		}
 
 		if (input == "click") {
